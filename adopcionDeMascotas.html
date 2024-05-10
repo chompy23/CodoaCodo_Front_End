@@ -62,17 +62,18 @@
                 <!-- Footer con formulario de contacto -->
             </div>
         </div>
-        <footer style="background-color: #333; color: white; text-align: center; padding: 10px 0px;">
-            <button onclick="toggleFormulario()">Contactar</button>
-            <div id="formulario" style="display: none;">
-                <input type="text" placeholder="Correo electrónico o número de teléfono">
-                <button onclick="enviarMensaje()">Enviar</button>
-                <p id="infoContacto" style="display: none; color: white;">AlimentCotas@gmail.com - número de
-                    teléfono 123-456-7890</p>
-            </div>
-        </footer>
-    </main>
 
+    </main>
+    <footer style="background-color: #333; color: white; text-align: center; padding: 10px 0px;">
+        <button onclick="toggleFormulario()">Contactar</button>
+        <div id="formulario" style="display: none;">
+            <input type="text" placeholder="Correo electrónico o número de teléfono">
+            <button onclick="enviarMensaje()">Enviar</button>
+            <p id="infoContacto" style="display: none; color: white;">AlimentCotas@gmail.com - número de
+                teléfono 123-456-7890</p>
+        </div>
+    </footer>
+</body>
     <script>
         function toggleFormulario() {
             var formulario = document.getElementById("formulario");
