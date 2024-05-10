@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" href="lapiz.png">
+    <link rel="stylesheet" href="estilo formulario.css">
+</head>
+
+<body>
+    <header>
+        <div>ALIMENCOTAS</div>
+            <nav>
+                <a href="./Alimentcotas.html">Home</a>
+                <a href="./Productos.html">Productos</a>
+            </nav>
+
+    </header>
+    <div class="contenedorForm">
+        <h3>Datos del cliente:</h3>
+
+    <form class="formulario">
+        <div class="caja">
+            <label for="nom">Nombre:</label>
+            <input type="text"  name="nombre" id="nom"  required>
+        </div>
+
+        <div class="caja">
+            <label for="ape">Apellido:</label>
+            <input type="text"  size="25" name="apellido" id="ape" minlength="3" required>
+        </div>
+        <div class="caja">
+            <label for="dire">Dirección:</label>
+            <input type="text"  size="40" name="direccion"  maxlength="100" placeholder="Ingrese dirección de entrega" id="dire" required>
+        </div>
+        <div class="caja">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" size="25" name="ciudad" id="ciudad"  required>
+        </div>
+        <div class="caja">
+            <label for="cp">C.P.:</label>
+            <input type="text"   name="cp" id="cp" placeholder="Código Postal" required>
+        </div>
+        <div>
+            <label for="fechent">Fecha de entrega preferida:</label>
+            <input type="date" name="fechent" id="fechent">
+        </div>
+        <h4>Rango horario preferido:</h4>
+        <div class="caja">
+        <input type="radio" name="opcion" value="1" checked>8 a 12 hs
+        <input type="radio" name="opcion" value="2" >13 a 18 hs
+        <input type="radio" name="opcion" value="3" >18 a 20 hs
+        </div>
+        <div class="caja">
+        <textarea name="otros" rows="2" cols="52">Información adicional para entrega</textarea>
+        </div>
+        <div>
+            <label for="tele">Teléfono de contacto</label>
+            <input type="tel" name="tele" size="31" id="tele" required>
+        </div>
+        <h3>Información del pedido</h3>
+
+        <h4>Perro:</h4>
+        <div class="caja">
+            <select name="tipoAlimentoPerro1">
+                <option value="1">Vital Can Balanced</option>
+                <option value="2">Old Prince Cordero</option>
+                <option value="3">Royal Canin Medium</option>
+                <option selected value="4">Royal Canin Mini</option>
+            </select>
+        </div>
+        <div class="caja">
+        <label for="cantidadAlimPerro1">Unidades:</label>
+        <input type="number" name="cantidadAlimPerro1" required>
+    </div>
+    <div class="caja">
+            <select name="tipoAlimentoPerro2">
+                <option value="1">Vital Can Balanced</option>
+                <option value="2">Old Prince Cordero</option>
+                <option value="3">Royal Canin Medium</option>
+                <option selected value="4">Royal Canin Mini</option>
+            </select>
+    </div>
+    <div class="caja">
+        <label for="cantidadAlimPerro2">Unidades:</label>
+        <input type="number" name="cantidadAlimPerro2" required>
+    </div>
+    <div>
+            <select name="tipoAlimentoPerro3">
+            <option value="1">Vital Can Balanced</option>
+            <option value="2">Old Prince Cordero</option>
+            <option value="3">Royal Canin Medium</option>
+            <option selected value="4">Royal Canin Mini</option>
+            </select>
+    </div>
+    <div class="caja">
+    <label for="cantidadAlimPerro3">Unidades:</label>
+        <input type="number" name="cantidadAlimPerro3">
+    </div>
+    <div>
+        <select name="tipoAlimentoPerro4">
+            <option value="1">Vital Can Balanced</option>
+            <option value="2">Old Prince Cordero</option>
+            <option value="3">Royal Canin Medium</option>
+            <option selected value="4">Royal Canin Mini</option>
+        </select>
+    </div>
+    <div class="caja">
+        <label for="cantidadAlimPerro4">Unidades:</label>
+        <input type="number" name="cantidadAlimPerro4">
+    </div>
+
+    <div>
+        <h4>Gato:</h4>
+        <select name="tipoAlimentoGato1">
+            <option value="1">Royal Canin Adult</option>
+            <option value="2">Purina Excellent</option>
+            <option value="3">Royal Canin Gatos castrados</option>
+            <option selected value="4">Whiskas Húmedo</option>
+        </select>
+    </div>
+
+    <div class="caja">
+        <label for="cantidadAlimGato1">Unidades:</label>
+        <input type="number" name="cantidadAlimGato1">
+    </div>
+
+    <div>
+        <select name="tipoAlimentoGato2">
+            <option value="1">Royal Canin Adult</option>
+            <option value="2">Purina Excellent</option>
+            <option value="3">Royal Canin Gatos castrados</option>
+            <option selected value="4">Whiskas Húmedo</option>
+        </select>
+    </div>
+
+    <div class="caja">
+        <label for="cantidadAlimGato2">Unidades:</label>
+        <input type="number" name="cantidadAlimGato2">
+    </div>
+
+    <div>
+        <select name="tipoAlimentoGato3">
+            <option value="1">Royal Canin Adult</option>
+            <option value="2">Purina Excellent</option>
+            <option value="3">Royal Canin Gatos castrados</option>
+            <option selected value="4">Whiskas Húmedo</option>
+        </select>
+    </div>
+
+    <div class="caja">
+        <label for="cantidadAlimGato3">Unidades:</label>
+        <input type="number" name="cantidadAlimGato3">
+    </div>
+
+    <div>
+        <select name="tipoAlimentoGato4">
+            <option value="1">Royal Canin Adult</option>
+            <option value="2">Purina Excellent</option>
+            <option value="3">Royal Canin Gatos castrados</option>
+            <option selected value="4">Whiskas Húmedo</option>
+        </select>
+    </div>
+
+    <div class="caja">
+        <label for="cantidadAlimGato4">Unidades:</label>
+        <input type="number" name="cantidadAlimGato4">
+    </div>
+
+    <div>
+        <input type="checkbox" name="masinfo">Deseo recibir promociones a mi celular y/o mail
+    </div>
+    <div class="caja">
+        <label for="mail">Email:</label>
+        <input type="email" size="29" name="mail" id="mail">
+    </div>
+    <button class="enviar" type="submit">ENVIAR</button>
+    <button class="borrar" type="reset">BORRAR</button>
+    </form>
+</div>
+</body>
+
+</html>

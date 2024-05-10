@@ -9,11 +9,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <style>
+        .item3 {
+            color: #FF1493; 
+        }
+        
+        .item4 {
+            color: #FFD700;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
-    <title>Prueba de Grid</title>
+    <link rel="stylesheet" href="estilo formulario.css">
+    <title>Alimentcotas</title>
 </head>
 
 <body>
+    <script>
+        function redireccion(url){
+    
+    window.location.href =url;}
+    </script>
+    
     <div class="responsive">
         <div class="ppal">
             <!--Header-->
@@ -24,23 +40,23 @@
             <!--Nav-->
             <div class="item2">
                 <nav>
-                    Home
-                    <a href="./Alimentcotas_Registro.html">Registro</a>
-
+                <a href="./Alimentcotas.html">Home</a>
                 </nav>
             </div>
-            <div class="item3">
-                <p>Adopcion de Mascotas</p>
+            <div class="item3" onclick="redireccion('adopcionDeMascotas.html')">
+                <p style="color: #FF1493;">Adopción de Mascotas</p>
+                <a href="adopcionDeMascotas.html">Apartado de adopciones</a>
             </div>
-            <div class="item4">
-                <p>Alimento para Mascotas</p>
+            <div class="item4" onclick="redireccion('Alimentcotas_Registro.html')">
+                <p style="color: #FFD700;">Alimento para Mascotas</p>
+                <a href="./Alimentcotas_Registro.html">Registro para alimentos</a>
             </div>
             <div class="item5">
                 <footer>Copyright Grupo9</footer>
             </div>
         </div>
     </div>
-    <script src="probar.js"></script>
+    
 </body>
 
 </html>

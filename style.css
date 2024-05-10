@@ -1,8 +1,6 @@
 .ppal {
   display: grid;
-  width: 95vw;
-  height: 100vh;
-  grid-template-rows: 40px 40px 270px 20px;
+  grid-template-rows: 0.5fr 0.5fr 8fr 0.5fr;
   gap: 2px;
   background-color: #2196f3;
   padding: 2px;
@@ -20,7 +18,7 @@
   justify-content: space-around;
   font-size: 16px;
   grid-column-start: 1;
-  grid-column-end: 12;
+  grid-column-end: 13;
   grid-row-start: 1;
 }
 
@@ -75,7 +73,7 @@
   font-size: 16px;
   text-align: center;
   grid-column-start: 1;
-  grid-column-end: 12;
+  grid-column-end: 13;
   grid-row-start: 2;
 }
 
@@ -83,8 +81,7 @@
   font-size: 16px;
   text-align: center;
   grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 3;
+  grid-column-end: 7;
   font-family: "Jersey 20", sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -105,9 +102,8 @@
 }
 
 .item4 {
-  grid-column-start: 6;
-  grid-column-end: 12;
-  grid-row-start: 3;
+  grid-column-start: 7;
+  grid-column-end: 13;
   font-size: 16px;
   font-family: "Jersey 20", sans-serif;
   font-weight: 400;
@@ -121,10 +117,8 @@
   font-size: 16px;
   text-align: center;
   grid-column-start: 1;
-  grid-column-end: 12;
-  grid-row-start: 4;
+  grid-column-end: 13;
 }
-
 @media only screen and (max-width: 480px) {
   .ppal > div {
     display: flex;
@@ -135,11 +129,17 @@
     width: 20px;
     height: 20px;
   }
+  .grid-container{
+    grid-template-columns: repeat(1,100%);
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .ppal > div {
     background-color: burlywood;
+  }
+  .grid-container{
+    grid-template-columns: repeat(2,50%);
   }
 }
 
@@ -147,4 +147,137 @@
   .ppal > div {
     color: darkblue;
   }
+  .grid-container{
+    grid-template-columns: repeat(4,25%);
+  }
 }
+/* APARTADO DE ADOPCION DE MASCOTAS */
+.grid-container{
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 25px;
+  padding: 10px;
+  max-width: 1200px;
+}
+.titulo{
+  grid-template-columns: repeat(1,100%);
+  text-align: center;
+}
+
+.adopcion{
+  padding: 20px; 
+  margin-bottom: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+  background-color: #f5f5f5;
+}
+    img {
+        width: 100%; /* Establece el ancho deseado para las imágenes */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+/* Estilo de fondo */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo de fuente */
+h1, h2, p {
+  color: #333;
+}
+
+/* Espaciado y alineación */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Colores y estilos de botones */
+button {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+/* Estilos de imagen */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Diseño responsivo */
+@media only screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+}
+
+/* APARTADO DE Registro de alimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.caja label {
+  flex-basis: 150px;
+  padding-right: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.contenedorForm {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+  background-color: #deb887;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 3;
+}
+footer {
+  padding: 10px;
+  background-color: #deb887;
+  margin-top: 20px;
+}
+
+
