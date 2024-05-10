@@ -23,6 +23,12 @@
 </head>
 
 <body>
+    <script>
+        function redireccion(url){
+    
+    window.location.href =url;}
+    </script>
+    
     <div class="responsive">
         <div class="ppal">
             <!--Header-->
@@ -36,11 +42,11 @@
                 <a href="./Alimentcotas.html">Home</a>
                 </nav>
             </div>
-            <div class="item3">
+            <div class="item3" onclick="redireccion('adopcionDeMascotas.html')">
                 <p style="color: #FF1493;">Adopción de Mascotas</p>
                 <a href="adopcionDeMascotas.html">Apartado de adopciones</a>
             </div>
-            <div class="item4">
+            <div class="item4" onclick="redireccion('Alimentcotas_Registro.html')">
                 <p style="color: #FFD700;">Alimento para Mascotas</p>
                 <a href="./Alimentcotas_Registro.html">Registro para alimentos</a>
             </div>
@@ -49,7 +55,7 @@
             </div>
         </div>
     </div>
-    <script src="probar.js"></script>
+    
 </body>
 
 </html>
