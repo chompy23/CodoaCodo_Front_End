@@ -1,0 +1,15 @@
+.envio {
+  width: 60px;
+  height: 20px;
+}
+
+form p {
+  float: left;
+  margin-left: 2px;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+
+  src: url("fontawesome-webfont.woff");
+}

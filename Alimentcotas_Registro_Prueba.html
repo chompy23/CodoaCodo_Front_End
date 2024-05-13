@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/styleRegistro.css">
+    <title>Prueba de Grid</title>
+</head>
+
+<body>
+    <div class="responsive">
+        <div class="ppal">
+            <!--Header-->
+            <div class="item1">Tienda de Mascotas</div>
+            <!--Nav-->
+            <div class="item2">
+                <nav>
+                    <a href="./Alimentcotas.html">Home</a>
+                </nav>
+            </div>
+            <div class="item3-page2">
+                <!--p>Colocar todo el formulario de registro</p-->
+                <!--h3>Formulario de Registro</h3-->
+                <form action="show_data.html" method="get">
+                    <p> Nombre <input type="text" name="Nombre" id="nombre" size="15" placeholder="Lorena"></p>
+                    <p> Apellido <input type="text" name="Apellido" id="apellido" size="15" placeholder="Garcia"></p>
+                    <!--br-->
+                    <!--h3>Dirección</h3-->
+                    <!--br-->
+                    <p> Calle <input type="text" name="calle" id="calle" size="15" placeholder="San Martin">
+                    </p>
+                    <p> Número <input type="number" name="Numero" id="numero" size="9" placeholder="1310"></p>
+                    <p> Ciudad <input type="text" name="Ciudad" id="ciudad" size="10" placeholder="San Lorenzo">
+                    </p>
+                    <p> Código postal <input type="text" name="CodigoPostal" id="codigo-postal" size="8"
+                            placeholder="2200"></p>
+                    <br>
+
+                    <p style="float: left;"> Telefono <input type="tel" name="Telefono" id="telefono" size="11"
+                            placeholder="11623457890"></p>
+                    <!--p style="float: left;"> Fecha Nac. <input type="date" name="FechaNac." id="fecha"></p-->
+                    <p> E_mail <input type="e_mail" name="E_mail" id="correo" placeholder="ejemplo@gmail.com"></p>
+                    <!--p style="float: left;"> Clave <input type="password" name="Clave" id="clave"></p>
+                    <p class="link"> Link de TP3 <input type="url" name="LinkDeTp3" id="link"></p-->
+                    <!--br><br><br-->
+
+                    <!--div id="genero">
+                        <br>
+                        <p class="generoRadio">
+                            Genero :
+                            <input type="radio" name="Genero" value="Hombre">Hombre
+                            <input type="radio" name="Genero" value="Mujer">Mujer
+                            <input type="radio" name="Genero" value="Otroº">Otro
+                        </p>
+                        <br><br>
+
+                        <p>Soft Hards
+                            <input type="checkbox" name="Conocimiento" value="Html">Html
+                            <input type="checkbox" name="Conocimiento" value="Css">Css
+                            <input type="checkbox" name="Conocimiento" value="Bootstrap">Bootstrap
+                            <input type="checkbox" name="Conocimiento" value="Javascript">Javascript
+                            <input type="checkbox" name="Conocimiento" value="Typescrip">Typescrip
+                            <input type="checkbox" name="Conocimiento" value="Angular">Angular
+                            <input type="checkbox" name="Conocimiento" value="Base de Datos">Base de Datos
+                            <input type="checkbox" name="Conocimiento" value="Python">Python
+                            <input type="checkbox" name="Conocimiento" value="Django">Django
+                        </p>
+                    </div-->
+                    <!--br><br>
+                    <label for="estudios">Turnos</label>
+                    <select name="Formacion" id="estudios">
+                        <option value="Manana">Mañana</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noche">Noche</option>
+                    </select>
+                    <br><br-->
+                    <!--h3>Comentarios :</h3>
+                    <textarea name="Comentario" id="comentarios" cols="30" rows="5"></textarea-->
+                    <br>
+                    <input class="envio" type="submit" value="Enviar">
+                </form>
+            </div>
+            <!-- Contenedor Grid eliminado para colocar todo el Registro en un Row-->
+            <!--div class="item4">
+                <p>Alimento para Mascotas</p>
+            </div-->
+            <!--Footer-->
+            <div class="item5">
+                <footer>Copyright Grupo9</footer>
+            </div>
+        </div>
+    </div>
+    <script src="probar.js"></script>
+</body>
+
+</html>
