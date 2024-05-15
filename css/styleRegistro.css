@@ -8,6 +8,19 @@ form p {
   margin-left: 2px;
 }
 
+#anim {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .item3-page2 {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+  }
+}
+
 @font-face {
   font-family: "FontAwesome";
 
